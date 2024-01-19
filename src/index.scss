@@ -16,3 +16,14 @@ a {
   text-decoration: none;
   color: $primary-white;
 }
+
+.content-body {
+  max-width: 1920px;
+  width: 100%;
+  background-color: $primary-grey;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-white;
+}

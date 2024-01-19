@@ -1,28 +1,36 @@
+import { useState } from "react";
+import logo from "../../assets/images/png/logoNoBG.png";
 import "./Header.scss";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <header>
-      <div className="header__item">
-        <a href="/" className="logo">
-          <img src="" alt="logo" />
+      <div className="header__logo">
+        <a href="/home" className="logo">
+          <img src={logo} alt="logo" className="logo__img" />
         </a>
       </div>
-      <div className="header__item">
-        <a href="/" className="home">
-          Home
-        </a>
-      </div>
-      <div className="header__item">
-        <a href="/" className="gallery">
-          Gallery
-        </a>
-      </div>
-      <div className="header__item">
-        <a href="/" className="about">
-          Contacts
-        </a>
-      </div>
+      <nav>
+        <ul className={`main-menu ${isMenuOpen ? "show" : ""}`}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="/contacts">Contacts</a>
+          </li>
+        </ul>
+        <button className="toggle-menu" onClick={toggleMenu}>
+          &#9776; Menu
+        </button>
+      </nav>
     </header>
   );
 };

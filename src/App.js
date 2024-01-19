@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 
 import HomePage from "./pages/HomePage";
-import ItemPage from "./pages/ItemPage";
+// import ItemPage from "./pages/ItemPage";
 
 function App() {
   return (
