@@ -24,7 +24,7 @@ const Header = () => {
             <a href="/gallery">Gallery</a>
           </li>
           <li>
-            <a href="/contacts">Contacts</a>
+            <a href="/about">About</a>
           </li>
         </ul>
         <button className="toggle-menu" onClick={toggleMenu}>

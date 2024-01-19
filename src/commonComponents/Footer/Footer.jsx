@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
               <div className="footer__item">
                 <a href="/" className="contacts">
-                  Contacts
+                  About
                 </a>
               </div>
             </div>
